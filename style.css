@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(120deg, #f6f9fc, #e8f0fe);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.input-section, .list-section, .total-section {
+  margin: 20px 0;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+form input, form select, form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+}
+
+form button {
+  background: #4a90e2;
+  color: white;
+  cursor: pointer;
+  flex: none;
+}
+
+form button:hover {
+  background: #357abd;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafc;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+}
+
+li span {
+  flex: 1;
+}
+
+.download-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.download-buttons button {
+  background: #27ae60;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.download-buttons button:hover {
+  background: #219150;
+}
+
+li button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+footer {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+@media(max-width:600px) {
+  form {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💰 My Expense Tracker</h1>
+    <p>Keep track of your money in a super simple way!</p>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>Add Expense</h2>
+      <form id="expenseForm">
+        <input type="text" id="title" placeholder="Expense Title" required>
+        <input type="number" id="amount" placeholder="Amount (₹)" required>
+        <select id="category" required>
+          <option value="">Choose Category</option>
+          <option value="Food">🍔 Food</option>
+          <option value="Travel">🚗 Travel</option>
+          <option value="Shopping">🛍 Shopping</option>
+          <option value="Other">📦 Other</option>
+        </select>
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Expense List</h2>
+      <ul id="expenseList"></ul>
+    </section>
+
+    <section class="total-section">
+      <h2>Total: ₹<span id="total">0</span></h2>
+      <div class="download-buttons">
+        <button id="downloadPDF">📄 Download PDF</button>
+        <button id="downloadExcel">📊 Download Excel</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>✨ Made by a TANISH CHOUDHARY ✨</p>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
